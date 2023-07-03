@@ -40,8 +40,19 @@ const containsDuplicates = (arr:number[]): boolean => {
 
 const isPalindrome = (str: string): boolean => {
     if (str.split('').reverse().join('') == str) return true
-    // console.log(newStr)
-    // if (newStr == str) return true
     return false
 }
-console.log(isPalindrome('racecar'))
+// console.log(isPalindrome('racecar'))
+
+
+const hasTargetSum = (array:number[], target: number): boolean => {
+    for (let i: number = 0; i < array.length; i++){
+        let num1: number = array[i]
+        for (let j: number = i+1; j < array.length; j++){
+            let num2: number = array[j]
+            if (num1 + num2 == target) return true
+        }
+    }
+    return false
+}
+console.log(hasTargetSum([1, 2, 5], 4))

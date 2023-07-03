@@ -34,8 +34,18 @@ const containsDuplicates = (arr) => {
 const isPalindrome = (str) => {
     if (str.split('').reverse().join('') == str)
         return true;
-    // console.log(newStr)
-    // if (newStr == str) return true
     return false;
 };
-console.log(isPalindrome('racecar'));
+// console.log(isPalindrome('racecar'))
+const hasTargetSum = (array, target) => {
+    for (let i = 0; i < array.length; i++) {
+        let num1 = array[i];
+        for (let j = i + 1; j < array.length; j++) {
+            let num2 = array[j];
+            if (num1 + num2 == target)
+                return true;
+        }
+    }
+    return false;
+};
+console.log(hasTargetSum([1, 2, 5], 4));
