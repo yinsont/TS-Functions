@@ -50,7 +50,7 @@ const isPalindrome2 = (str: string): boolean => {
     }
     return true
 }
-console.log(isPalindrome2('racecar'))
+// console.log(isPalindrome2('racecar'))
 
 const hasTargetSum = (array:number[], target: number): boolean => {
     for (let i: number = 0; i < array.length; i++){
@@ -63,3 +63,4 @@ const hasTargetSum = (array:number[], target: number): boolean => {
     return false
 }
 // console.log(hasTargetSum([1, 2, 5], 4))
+//------------------------------------------------------------------------------------
