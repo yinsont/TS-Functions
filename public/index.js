@@ -44,7 +44,7 @@ const isPalindrome2 = (str) => {
     }
     return true;
 };
-console.log(isPalindrome2('racecar'));
+// console.log(isPalindrome2('racecar'))
 const hasTargetSum = (array, target) => {
     for (let i = 0; i < array.length; i++) {
         let num1 = array[i];
@@ -57,3 +57,4 @@ const hasTargetSum = (array, target) => {
     return false;
 };
 // console.log(hasTargetSum([1, 2, 5], 4))
+//------------------------------------------------------------------------------------
