@@ -42,8 +42,15 @@ const isPalindrome = (str: string): boolean => {
     if (str.split('').reverse().join('') == str) return true
     return false
 }
-// console.log(isPalindrome('racecar'))
 
+const isPalindrome2 = (str: string): boolean => {
+    for (let i: number = 0; i < str.length; i++){
+        // console.log(str[str.length - 1 -i])
+        if (str[i] !== str[str.length - 1 - i]) return false
+    }
+    return true
+}
+console.log(isPalindrome2('racecar'))
 
 const hasTargetSum = (array:number[], target: number): boolean => {
     for (let i: number = 0; i < array.length; i++){
@@ -55,4 +62,4 @@ const hasTargetSum = (array:number[], target: number): boolean => {
     }
     return false
 }
-console.log(hasTargetSum([1, 2, 5], 4))
+// console.log(hasTargetSum([1, 2, 5], 4))
